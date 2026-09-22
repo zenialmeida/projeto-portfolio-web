@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio Inês Almeida | Web Developer</title>
+    <meta name="description" content="Portfólio de Inês Almeida com projetos, skills, experiência profissional e contacto.">
+    <meta name="keywords" content="portfólio, web developer, front-end, back-end, UX/UI, projetos, Inês Almeida">
+    <meta name="author" content="Inês Almeida">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: #000000;">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="index.html">Inês Almeida</a>
+
+            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegação">
+                <span class="navbar-toggler-icon" style="filter: brightness(0) invert(1);"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <p class="text-uppercase text-primary fw-semibold mb-2">Bem-vindo ao meu portfólio</p>
+                    <h1 class="display-5 fw-bold">Olá, eu sou a Inês Almeida</h1>
+                    <p class="lead">Sou web developer e crio soluções digitais modernas, funcionais e responsivas.</p>
+                    <p>Explore os meus projetos, descubra as minhas competências e conheça melhor o meu percurso profissional.</p>
+                    <a href="projetos.html" class="btn btn-primary btn-lg me-2">Ver projetos</a>
+                    <a href="contactos.html" class="btn btn-outline-dark btn-lg">Contactar</a>
+                </div>
+
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="imagens/foto-ines.JPG" alt="Fotografia de Inês Almeida, web developer" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Os meus projectos</h2>
+                <p class="section-subtitle">Os meus projectos mais recentes.</p>
+            </div>
+
+            <div id="carouselProjetos" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Projeto 1"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Projeto 2"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Projeto 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/projecto1-chatbot-atendimento.jpg" class="d-block w-100" alt="Projeto chatbot de atendimento ao cliente">
+                        <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="h5 text-white">Projeto 1 — Chatbot de Atendimento</h3>
+                            <p class="text-white mb-0">
+                                Desenvolvimento de um chatbot inteligente para uma empresa de comércio eletrónico, com o objetivo de melhorar o apoio ao cliente, automatizar respostas e aumentar a eficiência do atendimento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/projecto2-aplicacao-gestao-de-tarefas.jpg" class="d-block w-100" alt="Projeto aplicação de gestão de tarefas">
+                        <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="h5 text-white">Projeto 2 — Aplicação de Gestão de Tarefas</h3>
+                            <p class="text-white mb-0">
+                                Criação de uma aplicação web para organizar tarefas diárias, permitindo ao utilizador gerir atividades, melhorar a produtividade e acompanhar objetivos de forma simples e intuitiva.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/projecto3-aplicação-de-clima.jpg" class="d-block w-100" alt="Projeto aplicação de clima">
+                        <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded">
+                            <h3 class="h5 text-white">Projeto 3 — Aplicação de Clima</h3>
+                            <p class="text-white mb-0">
+                                Desenvolvimento de uma aplicação web de previsão meteorológica para diferentes cidades, com interface responsiva, apresentação clara da informação e foco na experiência do utilizador.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Seguinte</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-soft py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Minhas Skills</h2>
+                <p class="section-subtitle">Áreas em que posso ajudar e tecnologias que domino.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="imagens/front-end-development.jpg" class="card-img-top" alt="Desenvolvimento front-end para interfaces modernas">
+                        <div class="card-body text-center">
+                            <h3 class="h5 fw-bold">Desenvolvimento Front-End</h3>
+                            <p class="mb-0">HTML, CSS, JavaScript e Bootstrap para interfaces modernas e responsivas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="imagens/back-end-development.jpg" class="card-img-top" alt="Desenvolvimento back-end para aplicações escaláveis">
+                        <div class="card-body text-center">
+                            <h3 class="h5 fw-bold">Desenvolvimento Back-End</h3>
+                            <p class="mb-0">Python, Node.js e SQL para aplicações robustas e escaláveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <img src="imagens/design-ux-ui.jpg" class="card-img-top" alt="Design UX e UI focado na experiência do utilizador">
+                        <div class="card-body text-center">
+                            <h3 class="h5 fw-bold">Design UX/UI</h3>
+                            <p class="mb-0">Experiências intuitivas e visuais apelativos focados no utilizador.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Experiência profissional</h2>
+                <p class="section-subtitle">Experiências relevantes no meu percurso profissional.</p>
+            </div>
+
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-5 text-center">
+                    <img src="imagens/imagem-experiencia-de-trabalho.jpg" alt="Ambiente profissional de trabalho em desenvolvimento web" class="img-fluid rounded shadow">
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="list-group shadow-sm">
+                        <div class="list-group-item p-4">
+                            <h3 class="h5 fw-bold mb-1">Desenvolvedora Web Freelance</h3>
+                            <p class="mb-0">Criação de websites e aplicações web personalizadas para diferentes clientes e necessidades.</p>
+                        </div>
+
+                        <div class="list-group-item p-4">
+                            <h3 class="h5 fw-bold mb-1">Estágio em Desenvolvimento Web</h3>
+                            <p class="mb-0">Participação em projetos de front-end e apoio ao desenvolvimento de interfaces.</p>
+                        </div>
+
+                        <div class="list-group-item p-4">
+                            <h3 class="h5 fw-bold mb-1">Projeto Académico</h3>
+                            <p class="mb-0">Desenvolvimento de uma aplicação web com integração de front-end e back-end.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="imagens/cv-ines-almeida.pdf" class="btn btn-primary" download>
+                            Fazer download do CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Vamos Conversar</h2>
+                <p class="section-subtitle">Estou disponível para novos projetos e oportunidades de colaboração.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold">Envie uma mensagem</h3>
+                            <p>Entre em contacto para esclarecer dúvidas ou apresentar a sua ideia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold">Agende uma reunião</h3>
+                            <p>Podemos conversar online ou presencialmente sobre o seu projeto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="h5 fw-bold">Vamos trabalhar juntos</h3>
+                            <p>Transformo ideias em soluções digitais modernas, eficazes e responsivas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="collapse" id="privacidade">
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body p-4 p-md-5">
+                        <h2 class="h4 fw-bold mb-4">Política de Privacidade</h2>
+
+                        <h3 class="h5 fw-bold">1. Recolha de informação</h3>
+                        <p>Este website pode recolher informações fornecidas voluntariamente pelo utilizador através de formulários de contacto, como nome, email e mensagem.</p>
+
+                        <h3 class="h5 fw-bold mt-4">2. Utilização dos dados</h3>
+                        <p>Os dados fornecidos serão utilizados apenas para responder a pedidos de contacto, prestar informações e melhorar a comunicação com os visitantes do website.</p>
+
+                        <h3 class="h5 fw-bold mt-4">3. Proteção de dados</h3>
+                        <p>Comprometo-me a proteger os dados pessoais dos utilizadores e a não partilhá-los com terceiros sem consentimento, exceto quando exigido por lei.</p>
+
+                        <h3 class="h5 fw-bold mt-4">4. Cookies</h3>
+                        <p>Este website poderá utilizar cookies para melhorar a experiência de navegação. O utilizador pode desativá-los nas definições do navegador.</p>
+
+                        <h3 class="h5 fw-bold mt-4">5. Direitos do utilizador</h3>
+                        <p>O utilizador pode solicitar o acesso, correção ou eliminação dos seus dados pessoais a qualquer momento, através dos contactos disponibilizados neste website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<footer class="py-4" style="background-color: #000000;">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-3 text-center text-md-start">
+                <img src="imagens/logotipo.png" alt="Logótipo do portfólio de Inês Almeida" class="img-fluid footer-logo">
+            </div>
+
+            <div class="col-12 col-md-4 text-center">
+                <p class="mb-2">&copy; 2026 Inês Almeida. Todos os direitos reservados.</p>
+                <div>
+                    <a class="privacy-link" data-bs-toggle="collapse" href="#privacidade" role="button" aria-expanded="false" aria-controls="privacidade">
+                        Política de Privacidade
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5 text-center text-md-end">
+                <a href="https://www.facebook.com/" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/351918358000" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
